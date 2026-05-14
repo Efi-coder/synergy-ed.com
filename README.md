@@ -1,0 +1,1 @@
+Synergy-ED Focus on the "Commission-based connection" model for edge computing and embedded systems with massive experience on embedded computing platforms (any platform)From BSP level - AI/ML to full turnkey solutions
