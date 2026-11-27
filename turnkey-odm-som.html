@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Synergy-ED interfaces you with ODMs and System-on-Module vendors that take products from concept to mass production. Vendor-neutral, pre-vetted partners.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.synergy-ed.com/turnkey-odm-som.html">
+  <meta property="og:title" content="Turnkey ODM &amp; SOM Selection Partners | Synergy-ED">
+  <meta property="og:description" content="Synergy-ED interfaces you with ODMs and System-on-Module vendors that take products from concept to mass production. Vendor-neutral, pre-vetted partners.">
+  <meta property="og:url" content="https://www.synergy-ed.com/turnkey-odm-som.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Synergy-ED">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://www.synergy-ed.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Synergy-ED - Accelerating Edge Computing and Embedded Design">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Turnkey ODM &amp; SOM Selection Partners | Synergy-ED">
+  <meta name="twitter:description" content="Synergy-ED interfaces you with ODMs and System-on-Module vendors that take products from concept to mass production. Vendor-neutral, pre-vetted partners.">
+  <meta name="twitter:image" content="https://www.synergy-ed.com/og-image.png">
+  <title>Turnkey ODM &amp; SOM Selection Partners | Synergy-ED</title>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --onyx: #0a0b0e;
+    --onyx-mid: #111318;
+    --onyx-surface: #161a22;
+    --onyx-border: #1f2530;
+    --cobalt: #1d6bff;
+    --cobalt-glow: #3d83ff;
+    --cobalt-dim: #0f3a8a;
+    --silver: #a8b3c2;
+    --silver-bright: #d0dae8;
+    --silver-dim: #4a5568;
+    --white: #f0f4ff;
+    --text-muted: #6b7a94;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--onyx);
+    color: var(--silver-bright);
+    font-size: 16px;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 6vw;
+    height: 72px;
+    background: rgba(10,11,14,0.88);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--onyx-border);
+  }
+
+  .logo {
+    display: flex; align-items: center; gap: 14px;
+    text-decoration: none;
+  }
+
+  /* ── "Connected Die" SVG Logo ── */
+  .logo-icon {
+    width: 38px; height: 38px; flex-shrink: 0;
+  }
+
+  .logo-text {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--white);
+    letter-spacing: 0.04em;
+  }
+  .logo-text span { color: var(--cobalt); }
+
+  .nav-links {
+    display: flex; gap: 36px; list-style: none;
+  }
+  .nav-links a {
+    color: var(--silver);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--white); }
+
+  .nav-cta {
+    background: var(--cobalt);
+    color: #fff !important;
+    padding: 9px 22px;
+    border-radius: 6px;
+    font-weight: 500 !important;
+    letter-spacing: 0.02em !important;
+    transition: background 0.2s !important;
+  }
+  .nav-cta:hover { background: var(--cobalt-glow) !important; }
+
+  /* ── HERO ── */
+  #hero {
+    min-height: 100vh;
+    display: flex; align-items: center;
+    padding: 120px 6vw 80px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-grid-bg {
+    position: absolute; inset: 0; z-index: 0;
+    background-image:
+      linear-gradient(rgba(29,107,255,0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(29,107,255,0.05) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: radial-gradient(ellipse 80% 80% at 50% 40%, black 30%, transparent 100%);
+  }
+
+  .hero-glow {
+    position: absolute;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(29,107,255,0.12) 0%, transparent 70%);
+    top: 10%; right: -5%;
+    pointer-events: none;
+  }
+
+  .hero-content {
+    position: relative; z-index: 1;
+    max-width: 560px;
+  }
+
+  .hero-eyebrow {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-size: 12px; font-weight: 500;
+    color: var(--cobalt-glow);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+    padding: 7px 16px;
+    border: 1px solid rgba(29,107,255,0.3);
+    border-radius: 100px;
+    background: rgba(29,107,255,0.06);
+  }
+
+  .eyebrow-dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--cobalt);
+    animation: pulse-dot 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse-dot {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(0.7); }
+  }
+
+  h1 {
+    font-family: 'Exo 2', sans-serif;
+    font-size: clamp(32px, 3.8vw, 54px);
+    font-weight: 800;
+    line-height: 1.15;
+    color: var(--white);
+    letter-spacing: -0.02em;
+    margin-bottom: 28px;
+  }
+
+  h1 .accent { color: var(--cobalt); }
+  h1 .silver-word { color: var(--silver); }
+
+  .hero-sub {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--silver);
+    max-width: 600px;
+    line-height: 1.75;
+    margin-bottom: 48px;
+  }
+
+  .hero-actions {
+    display: flex; gap: 16px; flex-wrap: wrap; align-items: center;
+  }
+
+  .btn-primary {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: var(--cobalt);
+    color: #fff;
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    transition: background 0.2s, transform 0.15s;
+  }
+  .btn-primary:hover { background: var(--cobalt-glow); transform: translateY(-1px); }
+
+  .btn-secondary {
+    display: inline-flex; align-items: center; gap: 10px;
+    color: var(--silver-bright);
+    padding: 16px 28px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    border: 1px solid var(--onyx-border);
+    transition: border-color 0.2s, color 0.2s;
+  }
+  .btn-secondary:hover { border-color: var(--silver-dim); color: var(--white); }
+
+  .hero-stats {
+    display: flex; gap: 48px;
+    margin-top: 72px;
+    padding-top: 40px;
+    border-top: 1px solid var(--onyx-border);
+  }
+
+  .stat-num {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1;
+    display: block;
+  }
+
+  .stat-label {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-top: 6px;
+    display: block;
+    letter-spacing: 0.04em;
+  }
+
+  /* ── PCB ILLUSTRATION ── */
+  .hero-visual {
+    position: absolute;
+    right: 6vw; top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    opacity: 0.6;
+  }
+
+  /* ── SECTION COMMON ── */
+  section { padding: 100px 6vw; }
+
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--cobalt-glow);
+    margin-bottom: 16px;
+    display: block;
+  }
+
+  h2 {
+    font-family: 'Exo 2', sans-serif;
+    font-size: clamp(30px, 4vw, 52px);
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+  }
+
+  .section-intro {
+    font-size: 17px;
+    font-weight: 300;
+    color: var(--silver);
+    max-width: 560px;
+    line-height: 1.75;
+  }
+
+  /* ── SERVICES / COMPETENCIES ── */
+  #services {
+    background: var(--onyx-mid);
+    border-top: 1px solid var(--onyx-border);
+    border-bottom: 1px solid var(--onyx-border);
+  }
+
+  .services-header {
+    max-width: 680px;
+    margin-bottom: 64px;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2px;
+    background: var(--onyx-border);
+    border: 1px solid var(--onyx-border);
+    border-radius: 14px;
+    overflow: hidden;
+  }
+
+  .service-card {
+    background: var(--onyx-mid);
+    padding: 40px 36px;
+    transition: background 0.2s;
+    position: relative;
+  }
+
+  .service-card:hover { background: var(--onyx-surface); }
+
+  .service-icon {
+    width: 48px; height: 48px;
+    border-radius: 12px;
+    border: 1px solid var(--onyx-border);
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 24px;
+    background: var(--onyx);
+  }
+
+  .service-card h3 {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 12px;
+  }
+
+  .service-card p {
+    font-size: 14px;
+    color: var(--silver);
+    line-height: 1.75;
+    font-weight: 300;
+  }
+
+  .service-tag {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 4px 12px;
+    border-radius: 100px;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .tag-ai { background: rgba(29,107,255,0.1); color: var(--cobalt-glow); border: 1px solid rgba(29,107,255,0.25); }
+  .tag-vision { background: rgba(0,188,212,0.08); color: #4dd0e1; border: 1px solid rgba(0,188,212,0.2); }
+  .tag-bsp { background: rgba(168,179,194,0.08); color: var(--silver); border: 1px solid rgba(168,179,194,0.2); }
+  .tag-turnkey { background: rgba(99,202,147,0.08); color: #63ca93; border: 1px solid rgba(99,202,147,0.2); }
+
+  /* ── ABOUT ── */
+  #about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+
+  @media (max-width: 900px) {
+    #about { grid-template-columns: 1fr; gap: 48px; }
+    .hero-visual { display: none; }
+    h1 { font-size: 40px; }
+  }
+
+  .about-body p {
+    color: var(--silver);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.85;
+    margin-bottom: 20px;
+  }
+
+  .about-chips {
+    display: flex; flex-wrap: wrap; gap: 10px;
+    margin-top: 36px;
+  }
+
+  .chip {
+    padding: 7px 16px;
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--silver);
+    border: 1px solid var(--onyx-border);
+    background: var(--onyx-surface);
+    letter-spacing: 0.04em;
+  }
+
+  .about-visual {
+    position: relative;
+  }
+
+  .about-card-stack {
+    display: flex; flex-direction: column; gap: 16px;
+  }
+
+  .exp-card {
+    background: var(--onyx-surface);
+    border: 1px solid var(--onyx-border);
+    border-radius: 12px;
+    padding: 22px 26px;
+    display: flex; align-items: flex-start; gap: 18px;
+  }
+
+  .exp-icon {
+    width: 42px; height: 42px; flex-shrink: 0;
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    background: rgba(29,107,255,0.12);
+    border: 1px solid rgba(29,107,255,0.2);
+  }
+
+  .exp-card h4 {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 4px;
+  }
+
+  .exp-card p {
+    font-size: 13px;
+    color: var(--text-muted);
+    font-weight: 300;
+    line-height: 1.6;
+  }
+
+  /* ── PROCESS ── */
+  #process {
+    background: var(--onyx-mid);
+    border-top: 1px solid var(--onyx-border);
+    border-bottom: 1px solid var(--onyx-border);
+  }
+
+  .process-header {
+    text-align: center;
+    max-width: 580px;
+    margin: 0 auto 72px;
+  }
+
+  .process-steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    position: relative;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .process-steps::before {
+    content: '';
+    position: absolute;
+    top: 32px; left: calc(33.33% - 10px); right: calc(33.33% - 10px);
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--cobalt), var(--cobalt), transparent);
+  }
+
+  .process-step {
+    text-align: center;
+    padding: 0 32px;
+  }
+
+  .step-num {
+    width: 64px; height: 64px;
+    border-radius: 50%;
+    border: 1px solid var(--onyx-border);
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 28px;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--cobalt-glow);
+    background: var(--onyx);
+    position: relative; z-index: 1;
+  }
+
+  .step-num.active {
+    background: var(--cobalt);
+    border-color: var(--cobalt);
+    color: #fff;
+    box-shadow: 0 0 32px rgba(29,107,255,0.35);
+  }
+
+  .process-step h3 {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 12px;
+  }
+
+  .process-step p {
+    font-size: 14px;
+    color: var(--silver);
+    font-weight: 300;
+    line-height: 1.75;
+  }
+
+  /* ── CASE STUDIES ── */
+  #cases {
+    padding: 100px 6vw;
+  }
+
+  .cases-header {
+    display: flex; align-items: flex-end; justify-content: space-between;
+    margin-bottom: 48px;
+    flex-wrap: wrap; gap: 24px;
+  }
+
+  .cases-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 24px;
+  }
+
+  .case-card {
+    background: var(--onyx-surface);
+    border: 1px solid var(--onyx-border);
+    border-radius: 16px;
+    padding: 40px 36px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+
+  .case-card:hover { border-color: var(--cobalt-dim); transform: translateY(-3px); }
+
+  .case-card::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--cobalt), #4dd0e1);
+  }
+
+  .case-badge {
+    display: inline-block;
+    padding: 5px 14px;
+    border-radius: 100px;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: rgba(29,107,255,0.1);
+    color: var(--cobalt-glow);
+    border: 1px solid rgba(29,107,255,0.25);
+    margin-bottom: 24px;
+  }
+
+  .case-card h3 {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 8px;
+  }
+
+  .case-card .case-client {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 24px;
+    font-weight: 300;
+  }
+
+  .case-rows { display: flex; flex-direction: column; gap: 14px; }
+
+  .case-row {
+    display: flex; align-items: flex-start; gap: 12px;
+  }
+
+  .case-row-label {
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+    min-width: 70px;
+    flex-shrink: 0;
+    padding-top: 2px;
+  }
+
+  .case-row-value {
+    font-size: 14px;
+    color: var(--silver-bright);
+    font-weight: 300;
+    line-height: 1.6;
+  }
+
+  .case-result-highlight {
+    color: #63ca93;
+    font-weight: 500;
+  }
+
+  /* ── CTA ── */
+  #cta {
+    padding: 120px 6vw;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cta-glow {
+    position: absolute;
+    width: 700px; height: 400px;
+    background: radial-gradient(ellipse, rgba(29,107,255,0.1) 0%, transparent 70%);
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+
+  #cta h2 {
+    font-size: clamp(32px, 5vw, 60px);
+    max-width: 720px;
+    margin: 0 auto 24px;
+  }
+
+  #cta p {
+    font-size: 17px;
+    font-weight: 300;
+    color: var(--silver);
+    max-width: 480px;
+    margin: 0 auto 48px;
+    line-height: 1.75;
+  }
+
+  .cta-actions {
+    display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    border-top: 1px solid var(--onyx-border);
+    padding: 48px 6vw 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .footer-left { display: flex; align-items: center; gap: 32px; flex-wrap: wrap; }
+
+  footer p {
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+
+  footer a {
+    font-size: 13px;
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  footer a:hover { color: var(--silver-bright); }
+
+  .footer-links { display: flex; gap: 28px; flex-wrap: wrap; }
+
+  /* ── ARROW ICON ── */
+  .arrow {
+    display: inline-block;
+    transition: transform 0.2s;
+  }
+  .btn-primary:hover .arrow { transform: translateX(3px); }
+
+  @media (max-width: 768px) {
+    nav { padding: 0 5vw; }
+    .nav-links { display: none; }
+    section { padding: 72px 5vw; }
+    .process-steps { grid-template-columns: 1fr; }
+    .process-steps::before { display: none; }
+    .cases-grid { grid-template-columns: 1fr; }
+    .hero-stats { flex-wrap: wrap; gap: 32px; }
+    footer { flex-direction: column; align-items: flex-start; }
+  }
+  .card-link { display: inline-block; margin-top: 16px; color: var(--cobalt-glow); text-decoration: none; font-size: 14px; font-weight: 500; }
+  .card-link:hover { color: var(--white); }
+
+
+  /* topic pages */
+  .breadcrumb { font-size: 13px; color: var(--text-muted); margin-bottom: 26px; }
+  .breadcrumb a { color: var(--cobalt-glow); text-decoration: none; }
+  .sub-hero { padding: 150px 6vw 30px; max-width: 980px; }
+  .sub-hero h1 { font-size: clamp(34px, 4.6vw, 54px); line-height: 1.12; margin: 18px 0 20px; }
+  .sub-hero .lede { font-size: 18px; color: var(--silver); max-width: 780px; }
+  .content-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 24px; margin-top: 44px; }
+  .info-card { background: var(--onyx-surface); border: 1px solid var(--onyx-border); border-radius: 12px; padding: 28px; }
+  .info-card h3 { font-family: 'Exo 2', sans-serif; color: var(--white); font-size: 18px; margin-bottom: 14px; }
+  .info-card p { color: var(--silver); font-size: 15px; }
+  .check-list { list-style: none; }
+  .check-list li { padding: 9px 0 9px 26px; position: relative; border-bottom: 1px solid var(--onyx-border); color: var(--silver); font-size: 15px; }
+  .check-list li:last-child { border-bottom: none; }
+  .check-list li::before { content: '\2192'; position: absolute; left: 0; color: var(--cobalt-glow); }
+  .chips-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 30px; }
+  .card-link { display: inline-block; margin-top: 16px; color: var(--cobalt-glow); text-decoration: none; font-size: 14px; font-weight: 500; }
+  .card-link:hover { color: var(--white); }
+  .contact-panel { background: var(--onyx-surface); border: 1px solid var(--onyx-border); border-radius: 14px; padding: 40px; max-width: 720px; margin-top: 44px; }
+  .contact-panel .big-mail { font-family: 'Exo 2', sans-serif; font-size: clamp(20px, 3vw, 28px); color: var(--cobalt-glow); text-decoration: none; }
+  .contact-panel .big-mail:hover { color: var(--white); }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Turnkey ODM and SOM selection partner matchmaking",
+  "description": "Vendor-neutral matchmaking with ODMs and System-on-Module vendors for hardware realization from NRE to mass production.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Synergy-ED",
+    "url": "https://www.synergy-ed.com/",
+    "email": "bizdev@synergy-ed.com"
+  },
+  "url": "https://www.synergy-ed.com/turnkey-odm-som.html"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.synergy-ed.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services",
+      "item": "https://www.synergy-ed.com/index.html#services"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Turnkey ODM & SOM",
+      "item": "https://www.synergy-ed.com/turnkey-odm-som.html"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="#">
+    <svg class="logo-icon" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- The Connected Die: chip body -->
+      <rect x="7" y="7" width="20" height="20" rx="3" fill="#0f3a8a" stroke="#1d6bff" stroke-width="1.2"/>
+      <!-- Pin traces from chip edges -->
+      <line x1="11" y1="7" x2="11" y2="3" stroke="#1d6bff" stroke-width="1.2" stroke-linecap="round"/>
+      <line x1="16" y1="7" x2="16" y2="3" stroke="#1d6bff" stroke-width="1.2" stroke-linecap="round"/>
+      <line x1="21" y1="7" x2="21" y2="3" stroke="#1d6bff" stroke-width="1.2" stroke-linecap="round"/>
+      <line x1="11" y1="27" x2="11" y2="31" stroke="#1d6bff" stroke-width="1.2" stroke-linecap="round"/>
+      <line x1="16" y1="27" x2="16" y2="31" stroke="#1d6bff" stroke-width="1.2" stroke-linecap="round"/>
+      <line x1="21" y1="27" x2="21" y2="31" stroke="#1d6bff" stroke-width="1.2" stroke-linecap="round"/>
+      <line x1="7" y1="12" x2="3" y2="12" stroke="#1d6bff" stroke-width="1.2" stroke-linecap="round"/>
+      <line x1="7" y1="17" x2="3" y2="17" stroke="#1d6bff" stroke-width="1.2" stroke-linecap="round"/>
+      <line x1="7" y1="22" x2="3" y2="22" stroke="#1d6bff" stroke-width="1.2" stroke-linecap="round"/>
+      <line x1="27" y1="12" x2="31" y2="12" stroke="#1d6bff" stroke-width="1.2" stroke-linecap="round"/>
+      <line x1="27" y1="17" x2="31" y2="17" stroke="#1d6bff" stroke-width="1.2" stroke-linecap="round"/>
+      <!-- Corner extends to outer node (the "bridge to ecosystem") -->
+      <line x1="27" y1="27" x2="33" y2="33" stroke="#3d83ff" stroke-width="1.4" stroke-linecap="round"/>
+      <circle cx="34" cy="34" r="2.5" fill="#1d6bff"/>
+      <!-- Inner die mark -->
+      <rect x="12" y="12" width="10" height="10" rx="1.5" fill="none" stroke="rgba(168,179,194,0.35)" stroke-width="0.8"/>
+      <circle cx="17" cy="17" r="2" fill="rgba(168,179,194,0.2)"/>
+    </svg>
+    <span class="logo-text">Synergy<span>-ED</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#process">Process</a></li>
+    <li><a href="index.html#cases">Case Studies</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="mailto:bizdev@synergy-ed.com" class="nav-cta">Discuss Your Architecture</a></li>
+  </ul>
+</nav>
+
+<section class="sub-hero">
+  <div class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a> &rsaquo; <a href="index.html#services">Services</a> &rsaquo; Turnkey ODM &amp; SOM</div>
+  <span class="section-label">Turnkey ODM &amp; SOM</span>
+  <h1>Turnkey hardware, ODMs and SOMs</h1>
+  <p class="lede">When the product needs a board and not just software, we interface you with ODMs and System-on-Module vendors that take projects from concept to mass production.</p>
+</section>
+
+<section id="details">
+  <span class="section-label">Two Routes</span>
+  <h2>Two ways to get the hardware built</h2>
+  <div class="services-grid" style="margin-top: 44px;">
+    <div class="service-card"><h3 style="margin-top: 0;">Start from a SOM</h3><p>A System-on-Module puts the processor, memory and power design on a proven module. You design a carrier board for your own interfaces, skip the hardest layout work and reach a working prototype sooner. This fits teams that want custom hardware without running a full board-design program.</p></div>
+    <div class="service-card"><h3 style="margin-top: 0;">Full turnkey ODM</h3><p>An ODM takes the product from concept to mass production: schematic, layout, mechanicals, certification and manufacturing. This fits teams that prefer to own the product definition and leave the hardware program to a partner that runs one every day.</p></div>
+  </div>
+</section>
+
+<section id="choosing">
+  <span class="section-label">Choosing</span>
+  <h2>Which route fits</h2>
+  <p class="section-intro">It comes down to volume and schedule. A SOM trades some unit cost for a much shorter path to production. A full custom board wins when volumes justify the engineering spend. We work with both kinds of partner and hold no bias toward any vendor, so the recommendation follows your numbers, not our incentives.</p>
+</section>
+
+<section id="case">
+  <span class="section-label">A Recent Match</span>
+  <h2>Smart carts, from prototype to production plan</h2>
+  <p class="section-intro">A smart cart startup in Israel was scaling vision AI on a rugged edge platform and had gaps on hardware and software at the same time. We matched them with a high-performance Qualcomm SOM vendor and a computer vision software house. That became a $150k NRE engagement with a production roadmap of 10,000 units. More on our <a href="index.html#cases" style="color: var(--cobalt-glow);">case studies</a>.</p>
+</section>
+
+<section id="cta">
+  <div class="cta-glow"></div>
+  <span class="section-label" style="display:block; text-align:center;">Ready to Accelerate?</span>
+  <h2>Tell Us Your Technical Bottleneck</h2>
+  <p>We will define what the right partner looks like and make a warm introduction from our pre-vetted network. No cost and no commitment for your team.</p>
+  <div class="cta-actions">
+    <a href="mailto:bizdev@synergy-ed.com" class="btn-primary">Discuss Your Challenge <span class="arrow">&rarr;</span></a>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-left">
+    <a class="logo" href="#">
+      <svg class="logo-icon" width="28" height="28" viewBox="0 0 38 38" fill="none">
+        <rect x="7" y="7" width="20" height="20" rx="3" fill="#0f3a8a" stroke="#1d6bff" stroke-width="1.2"/>
+        <line x1="11" y1="7" x2="11" y2="3" stroke="#1d6bff" stroke-width="1.2" stroke-linecap="round"/>
+        <line x1="16" y1="7" x2="16" y2="3" stroke="#1d6bff" stroke-width="1.2" stroke-linecap="round"/>
+        <line x1="21" y1="7" x2="21" y2="3" stroke="#1d6bff" stroke-width="1.2" stroke-linecap="round"/>
+        <line x1="27" y1="27" x2="33" y2="33" stroke="#3d83ff" stroke-width="1.4" stroke-linecap="round"/>
+        <circle cx="34" cy="34" r="2.5" fill="#1d6bff"/>
+      </svg>
+      <span class="logo-text" style="font-size:15px;">Synergy<span>-ED</span></span>
+    </a>
+    <p>© 2026 Synergy-ED. All rights reserved.</p>
+    <p><a href="mailto:bizdev@synergy-ed.com" style="color: var(--cobalt-glow); text-decoration: none;">bizdev@synergy-ed.com</a></p>
+  </div>
+  <div class="footer-links">
+    <a href="index.html#services">Services</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#process">Process</a>
+    <a href="index.html#cases">Case Studies</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</footer>
+
+<script>
+  const cards = document.querySelectorAll('.info-card, .contact-panel, .case-card, .service-card, .process-step');
+  cards.forEach((el, i) => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = `opacity 0.5s ease ${i * 0.07}s, transform 0.5s ease ${i * 0.07}s`;
+  });
+  const fadeObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+        fadeObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  cards.forEach(el => fadeObserver.observe(el));
+</script>
+</body>
+</html>
